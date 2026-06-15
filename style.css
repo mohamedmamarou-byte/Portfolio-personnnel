@@ -1,0 +1,344 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0a0f1e;
+    color: #e8e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+section{
+    scroll-margin-top: 90px;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #070b18;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+    z-index: 1000;
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex: 1;
+    gap: 55px;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+#navbar ul li a:hover {
+    background-color: rgba(0, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 8px;
+    color:cyan;
+}
+#logo {
+    color: cyan;
+    font-size: 25px;
+    font-weight: 700;
+}
+#accueil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 100px;
+}
+#image {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#accueil h1 {
+    font-size: 90px;
+    margin-bottom: 90px;
+    color: cyan;
+}
+#accueil p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#cv {
+    background-color: aqua;
+    padding: 8px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+#cv:hover {
+    background-color: rgb(44, 62, 63);
+}
+#apropos {
+    min-height: 100vh;
+
+}
+#compet {
+    min-height: 100vh;
+}
+#projets {
+    min-height: 100vh;
+}
+#contact {
+    min-height: 100vh;
+    
+}
+.propos {
+    padding-top: 100px;
+    background-color: #192849;
+    border-left: 4px solid cyan;
+    border-right: 4px solid cyan;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: transform 0.3s ease;
+    
+}
+.propos h3 {
+    color: cyan;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.propos p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+#propre {
+    text-align: center;
+}
+#apropos h2 {
+    font-size: 45px;
+    color: cyan;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    
+}
+.propos:hover{
+    transform: translateY(-10px);
+}
+#compétances {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 100px 50px;
+}
+.competanc { 
+    background-color: #182646;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.competanc:hover {
+    transform: translateY(-10px);
+}
+.competanc:has(#C) .titre {
+    background-color: rgba(0, 87, 183, 1);
+}
+.competanc:has(#HTML) .titre {
+    background-color: rgba(255, 76, 38, 0.8);
+}
+.competanc:has(#CSS) .titre {
+    background-color: rgba(38, 77, 228, 0.8);
+}
+.competanc:has(#Python) .titre {
+    background-color: rgba(55, 118, 171, 1);
+}
+.competanc:has(#Flutter) .titre {
+    background-color: rgba(84, 197, 248, 0.8);
+}
+.competanc:has(#Java) .titre {
+    background-color: rgba(247, 223, 30, 0.8);
+}
+.titre {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px 10px 0 0 ;
+    
+}
+#compet h2 {
+    color: cyan;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+#projets {
+    padding-left: 40px;
+    padding-right: 40px ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.realisation {
+    background-color: #315372;
+    border-radius: 20px;
+    padding: 30px;
+    border-left: 5px solid aqua;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.realisation:hover {
+    transform: translateY(-5px);
+}
+.capture {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+.capture img {
+    width: 430px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#projets h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: cyan;
+}
+#projets p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.tech {
+    font-size: 20px;
+    font-weight: 410;
+    color: lime;
+}
+#projets h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: cyan;
+    text-align: center;
+}
+#contact {
+    padding-bottom: 30px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+#formulaire {
+    background-color: #1c3144;
+    margin-right: 600px;
+    margin-left: 600px;
+    border-radius: 20px;
+    padding: 100px 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formulaire textarea {
+    background-color: #345a7e;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    padding: 10px;
+    color: #e8e0e0;
+    font-family: 'Poppins', sans-serif;
+}
+#formulaire input {
+    background-color: #345a7e;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    padding: 10px;
+    color: #e8e0e0;
+    font-family: 'Poppins', sans-serif;
+}
+#formulaire input:focus {
+    outline: none;
+    border-color: cyan;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+#formulaire textarea:focus {
+    outline: none;
+    border-color: cyan;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+#contact button{
+    border-radius: 10px;
+    padding: 8px;
+}
+#contact button:hover{
+    cursor: pointer;
+    background-color: cyan;
+    color: #070b18;
+}
+#contact h2 {
+    color: cyan;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+}
+#pied {
+    background-color: #04060c;
+    text-align: center;
+    padding: 20px;
+    color: #e8e0e0;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+}
+.barre {
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.progression {
+    height: 100%;
+    width: 0%;
+    background-color: cyan;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+#humburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+}
+#humburger span {
+    width: 25px;
+    height: 3px;
+    background-color: cyan;
+    border-radius: 3px;
+}
+@media (max-width : 768px) {
+    #humburger { display: flex;}
+    .capture { display: flex; justify-content: center;}
+    .capture img { width: 80px; height: 65px;}
+    #navbar ul {display: none; flex-direction: column; width: 100%;}
+    #navbar ul.ouvert {display: flex}
+    #accueil {flex-direction: column; text-align: center;gap: 20px; text-align: left;}
+    #accueil h1 { font-size: 30px;}
+    #accuuiel h1 { font-size: 20px;}
+    #image {width: 250px; height: 250px;}
+    #compétances { grid-template-columns: 1fr;}
+    #projets { padding: 80px 20px;}
+    #formulaire {width: 100%;}
+}
